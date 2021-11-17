@@ -24,6 +24,10 @@ export default Component.extend({
     return this.site.categories.filter((n)=> { return !n.parent_category_id });
   },
   @discourseComputed()
+  isMainPage() {
+    return this.router.currentRoute.name.includes("discovery.latest");
+  },
+  @discourseComputed()
   shouldRenderHeadings() {
     console.log(this);
     let isCategoryPage = this.router.currentRoute.name.includes("category");
