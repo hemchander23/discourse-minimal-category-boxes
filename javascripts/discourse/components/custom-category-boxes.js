@@ -23,9 +23,10 @@ export default Component.extend({
   categoryList() {
     return this.site.categories.filter((n)=> { return !n.parent_category_id });
   },
-  @discourseComputed()
-  isMainPage() {
-    return (this.router.currentRoute.name == "discovery.latest");
+  @discourseComputed("router.currentRouteName")
+  isMainPage(currentRouteName) {
+    console.log(currentRouteName)
+    return (currentRouteName == "discovery.latest");
   },
   @discourseComputed()
   shouldRenderHeadings() {
