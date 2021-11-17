@@ -21,6 +21,7 @@ export default Component.extend({
   },
   @discourseComputed()
   shouldRenderHeadings() {
+    console.log(this);
     let isCategoryPage = this.router.currentRoute.name.includes("category");
     let hasCategoriesSet = false;
     if (
