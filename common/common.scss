@@ -295,7 +295,7 @@
 
 @media (max-width: 960px) {
   .custom-category-boxes {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
 
