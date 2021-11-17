@@ -25,7 +25,6 @@ export default Component.extend({
   },
   @discourseComputed("router.currentRouteName")
   isMainPage(currentRouteName) {
-    console.log(currentRouteName)
     return (currentRouteName == "discovery.latest");
   },
   @discourseComputed()
