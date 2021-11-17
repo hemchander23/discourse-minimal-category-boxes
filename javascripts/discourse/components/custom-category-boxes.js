@@ -21,7 +21,7 @@ export default Component.extend({
   },
   @discourseComputed()
   categoryList() {
-    return this.site.categories;
+    return this.site.categories.filter((n)=> { return !n.parent_category_id });
   },
   @discourseComputed()
   shouldRenderHeadings() {
