@@ -20,6 +20,10 @@ export default Component.extend({
     return availableCategories;
   },
   @discourseComputed()
+  categoryList() {
+    return this.site.categories;
+  },
+  @discourseComputed()
   shouldRenderHeadings() {
     console.log(this);
     let isCategoryPage = this.router.currentRoute.name.includes("category");
