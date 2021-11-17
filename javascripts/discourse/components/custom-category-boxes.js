@@ -25,7 +25,7 @@ export default Component.extend({
   },
   @discourseComputed()
   isMainPage() {
-    return this.router.currentRoute.name.includes("discovery.latest");
+    return (this.router.currentRoute.name == "discovery.latest");
   },
   @discourseComputed()
   shouldRenderHeadings() {

@@ -426,8 +426,8 @@
   {{/if}}
 
 {{else}}
-  {{#if isMainPage}}
-    <span class="custom-category-boxes cboxes">
+  {{#if isMainPage}} 
+    <span class="custom-category-boxes">
       {{#each categoryList as |c|}}
         <a href={{c.url}} data-category-id={{c.id}} data-notification-level={{c.notificationLevelString}} data-url={{c.url}} class="category category-box category-box-{{c.slug}} {{if c.isMuted "muted"}} {{if noCategoryStyle "no-category-boxes-style"}}">
           <div class="category-box-inner">
